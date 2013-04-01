@@ -2,6 +2,22 @@ body{
     background-color: #ffffff;
 }
 
+.sidebar-nav-fixed{
+    position:fixed;
+    width:30%;
+}
+@media (max-width: 769px){
+    .sidebar-nav-fixed{
+        width:auto;
+    }
+}
+@media (max-width: 979px){
+    .sidebar-nav-fixed{
+        position:static;
+        width: auto;
+    }
+}
+
 .left_container{
     background-color: #ffffff;
     height:700px !important;
