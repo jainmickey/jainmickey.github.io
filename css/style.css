@@ -17,19 +17,19 @@ body{
         width:auto;
     }
 }
-@media (max-width: 900px){
+@media (max-width: 980px){
     .sidebar-nav-fixed{
         height: 100%;
-        /*position:static;*/
+        position:static;
         width: auto;
     }
 }
 @media (max-height : 600px){
     .sidebar-nav-fixed{
         position:static;
-        height:100%;
+        height: 100%;
         width:auto;
-    }
+}
 }
 
 .left_container{
@@ -48,9 +48,11 @@ body{
 .name{
     font-family: Ubuntu Condensed;
 }
+
 h2{
     font-family: Segoe UI;
 }
+
 p{
     font-family: Segoe UI Light;
 }
@@ -67,10 +69,7 @@ p{
     margin-left: -3%;
     color: #000000;
 }
+
 .footer a{
     color: #333333;
 }
-
-
-SegoeUI
-
