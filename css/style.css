@@ -3,9 +3,9 @@ body{
 }
 
 .sidebar-nav-fixed{
-    border-right: 0.5px solid #666666;
-    border-left: 0.5px solid #666666;
-    border-bottom: 0.5px solid #666666;
+    border-right: 1px solid #666666;
+    border-left: 1px solid #666666;
+    border-bottom: 1px solid #666666;
     height : 100%;
     position:fixed;
     width:30%;
@@ -37,10 +37,9 @@ body{
 }
 
 .top_partition{
-    height: 370px;
-    background-image:url('../images/style.jpg');
+    height: 350px;
+    background-image:url('../images/amity.jpg');
 }
-
 .me{
     margin-top: -50px;
 }
@@ -50,11 +49,14 @@ body{
 }
 
 h2{
-    font-family: Segoe UI;
+    /*font-family: Segoe UI;*/
+    font-family: 'Noto Serif', serif;
+    text-shadow: 1px 1px 1px #aaa;
 }
 
 p{
     font-family: Segoe UI Light;
+    font-size: 16px;
 }
 
 .right_container{
