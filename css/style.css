@@ -75,3 +75,7 @@ p{
 .footer a{
     color: #333333;
 }
+
+.footer p{
+    font-size: 11px;
+}
