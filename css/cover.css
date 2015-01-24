@@ -64,6 +64,11 @@ header {
     overflow: auto;
 }
 
+.head-name {
+    margin-top: 8px;
+    margin-left: -20px;
+}
+
 .wrap-col {
     overflow: hidden;
 }
