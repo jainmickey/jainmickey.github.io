@@ -188,6 +188,11 @@ header {
   .cover-container {
     width: 100%; /* Must be percentage or pixels for horizontal alignment */
   }
+
+  /* Remove Mayank Jain from header */
+  .head-name {
+      display: none;
+  }
 }
 
 @media (min-width: 992px) {
