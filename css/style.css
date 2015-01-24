@@ -59,6 +59,11 @@ p{
     font-size: 16px;
 }
 
+.head-name {
+    margin-top: 8px;
+    margin-left: -20px;
+}
+
 .right_container{
     background-color: #ffffff;
     margin-top: 50px;
