@@ -46,7 +46,7 @@
                           <div class="row">
                               <div class="col-xs-2 clearfix head-image text-right">
                                   <img src="2.jpg" alt="Profile pic" class="img-responsive img-circle">
-                                  <h2 class="head_name" style="display: none;">Mayank Jain</h2>
+                                  <h2 class="head-name">Mayank Jain</h2>
                               </div>
                               <div class="col-xs-10 clearfix">
                                   <h2 class="head-text">Welcome to the online space of <b>Mayank Jain</b>.</h2>
@@ -184,6 +184,7 @@
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="/js/ie10-viewport-bug-workaround.js"></script>
     <script type="text/javascript">
+        $('.head-name').hide();
         $('.slide-nav').on('affixed.bs.affix', function() {
             $('.head-text').hide();
             $('.head-name').show();
