@@ -46,6 +46,7 @@
                           <div class="row">
                               <div class="col-xs-2 clearfix head-image text-right">
                                   <img src="2.jpg" alt="Profile pic" class="img-responsive img-circle">
+                                  <h2 class="head_name" style="display: none;">Mayank Jain</h2>
                               </div>
                               <div class="col-xs-10 clearfix">
                                   <h2 class="head-text">Welcome to the online space of <b>Mayank Jain</b>.</h2>
@@ -185,15 +186,19 @@
     <script type="text/javascript">
         $('.slide-nav').on('affixed.bs.affix', function() {
             $('.head-text').hide();
+            $('.head-name').show();
             $('.head-image img').height('50px');
             $('.head-image img').width('50px');
             $('.head-image img').css('margin-top', '0%');
+            $('#menu-primary-navigation-en').css('float', 'right');
         });
         $('.slide-nav').on('affixed-top.bs.affix', function() {
             $('.head-text').show();
+            $('.head-name').hide();
             $('.head-image img').height('100px');
             $('.head-image img').width('100px');
             $('.head-image img').css('margin-top', '7%');
+            $('#menu-primary-navigation-en').css('float', '');
         });
     </script>
     <script>
