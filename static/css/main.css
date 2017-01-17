@@ -29,7 +29,7 @@ nav ul li a:hover {border-bottom: 1px solid;outline: none;}
 .profile--image {
   text-align: center;
   background-size: cover;
-  background-position: bottom right;
+  background-position: top center;
   position: absolute;
   top: 0;
   left: 0;
@@ -241,7 +241,7 @@ transition:
      /*padding: 1em 0 1em 0;*/
      position: relative;
      height: 300px;
-     background-position: bottom right;
+     background-position: top center;
   }
   .about--copy {
     text-shadow: none;
@@ -252,13 +252,13 @@ transition:
      /*padding: 1em 0 1em 0;*/
      position: relative;
      height: 200px;
-     background-position: bottom right;
+     background-position: top center;
   }
 }
 
 @media screen and (min-height: 800px) {
   .profile--image {
-     background-position: bottom center;
+     background-position: top center;
   }
 }
 
