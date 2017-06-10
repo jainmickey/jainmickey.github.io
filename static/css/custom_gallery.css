@@ -1,0 +1,145 @@
+@charset "utf-8";
+/* reset marginesów oraz dopełnień */
+html, body, ul, li { margin: 0; padding: 6px; line-height: 1.2em;}
+br {line-height:8px; margin:0px;}
+
+/* reset wysokości linii i fontu */
+h1, h2, ul, li, p { margin: 0; padding: 0; }
+/* ustawienia globalne */
+html, body {font-family:'Lato', Helvetica, tahoma, arial, sans-serif; font-size: 0.625em/1.5em; }
+a {color:#1c769a; text-decoration:none; font-size:1.1em;}
+a:hover {text-decoration:underline;}
+
+/* TYTUŁ */
+h1 {
+	font-size:1.3em;
+	font-weight: normal;
+	text-align:center;
+	color:#414141;
+	margin-bottom:0px; padding:0px;
+}
+h3 {
+	font-size:0.8em;
+	font-weight: normal;
+	text-align:center;
+	color:#8f8f8f;
+	margin-top:3px; padding-top:0px;
+	margin-bottom:25px;
+}
+h3 a { 
+	color:#747474;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: "GTWalsheim", sans-serif;
+    font-weight: bold;
+    line-height: 1.25;
+}
+/* CONTENT */ 
+.content {
+	position:relative; 
+	width:100%;   
+	margin:0 auto; 
+}
+.content p {
+	margin-bottom: 10px;
+	font-size:14px;
+	line-height: 20px;
+	color: #454545;
+}
+
+.center {
+    text-align: center;
+}
+
+.member-info {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    font-family: "GTWalsheim", sans-serif;
+    line-height: 1.5;
+    font-size: 100%;
+    text-rendering: optimizeLegibility;
+    border: 0;
+    padding: 0;
+}
+
+.h1-responsive {
+    font-size: 4vw;
+}
+.letter-spacing-reset {
+    letter-spacing: 0;
+}
+.caps {
+    text-transform: uppercase;
+    letter-spacing: .15em;
+}
+.inline-block {
+    display: inline-block;
+}
+.relative {
+    position: relative;
+}
+.z1 {
+    z-index: 1;
+}
+.bold {
+    font-weight: bold;
+}
+.h5 {
+    font-size: 0.875rem;
+}
+.black {
+    color: #111;
+}
+.sm_p2 {
+    padding: 1rem;
+}
+.sm_px0 {
+    padding: 0rem;
+}
+.sm_py2 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.mb1 {
+    margin-bottom: 0.5rem;
+}
+.mb2 {
+    margin-bottom: 1rem;
+}
+.mt1 {
+    margin-top: 0.5rem;
+}
+.mt2 {
+    margin-top: 1rem;
+}
+.w-100 {
+    max-width: 100px;
+    width: 90%;
+}
+hr {
+    border: 0;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: rgba(0,0,0,0.125);
+}
+.avatar {
+    width: 90px;
+    height: 90px;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 100%;
+}
+.avatar img {
+    border-radius: 100%;
+    max-width: 100%;
+}
+.hover-lift {
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    transform: translate(0, 0);
+    -webkit-transition: all 500ms cubic-bezier(0.77, 0.06, 0.12, 0.98);
+    -moz-transition: all 500ms cubic-bezier(0.77, 0.06, 0.12, 0.98);
+    transition: all 500ms cubic-bezier(0.77, 0.06, 0.12, 0.98);
+}

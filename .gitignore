@@ -78,7 +78,7 @@ dump.rdb
 # python-dotenv
 .env
 
-# treblemaker
+# jainmickey
 _docs_html/
 media/
 provisioner/site.retry
