@@ -96,7 +96,7 @@
             //Build ala-each fn 
             for(var i=0; i < prty.photoDetails.length; i++){
                 img = prty.photoDetails[i];
-                thisItem = prty.galleryDiv.append("<li id="+i+"><a href='"+img.url_o+"'><img src='"+img.url_m+"' alt='"+img.title+"' /><div class='bg'></div><div class='content'></div><i class='show' data-href='"+img.url_o+"' data-photoid='"+img.id+"'>VIEW IT</i></a></li>").find('li .content').last();
+                thisItem = prty.galleryDiv.append("<li id="+i+"><a href='"+img.url_h+"'><img src='"+img.url_m+"' alt='"+img.title+"' /><div class='bg'></div><div class='content'></div><i class='show' data-href='"+img.url_h+"' data-photoid='"+img.id+"'>VIEW IT</i></a></li>").find('li .content').last();
                 //Check title and add it
                 if(img.title !== "") {
                     thisItem.append("<h4>"+img.title+"</h4>");
@@ -206,7 +206,7 @@
                     //Hide the preloader
                     prty.loader.fadeOut(settings.Speed/2);  
                 }; 
-                img.src = prty.photoDetails[prty.activeEl].url_o;
+                img.src = prty.photoDetails[prty.activeEl].url_h;
             //Add next and prev support
             if(settings.navigation) {
                 //Init the support
