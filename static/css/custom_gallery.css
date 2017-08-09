@@ -1,6 +1,6 @@
 @charset "utf-8";
 /* reset marginesów oraz dopełnień */
-html, body, ul, li { margin: 0; padding: 6px; line-height: 1.2em;}
+html, body, ul, li { margin: 0; padding: 6px; line-height: 1.6em;}
 br {line-height:8px; margin:0px;}
 
 /* reset wysokości linii i fontu */

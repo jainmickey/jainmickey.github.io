@@ -3,7 +3,7 @@
 .niceGallery {
 	width: 100%;
 /*	max-width: 1100px;*/
-	min-width: 300px; 
+	min-width: 250px;
     margin-left: auto;
     margin-right: auto;
 } 
@@ -31,7 +31,7 @@
     height: 100%;
     display: block;
     overflow: hidden;
-    float: left;
+    /* float: left; */
 }
 .niceGallery ul.entries-columns li a img {
     position: static;
