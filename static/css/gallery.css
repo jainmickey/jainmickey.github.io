@@ -220,6 +220,17 @@
     z-index: 900;
     display: none;
 }
+.galleryLoader {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    background: url(img/oval.svg) center no-repeat;
+    background-size: 50px;
+    z-index: 880;
+    display: none;
+}
 .viewbox .media_c img {
     width: 100%;
     height: auto;

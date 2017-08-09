@@ -11,6 +11,7 @@
     /* Global variables */
     var prty, flickr;
     var base_url = 'https://jainmickey-web.herokuapp.com';
+    // var base_url = 'http://localhost:8000';
 
 	$.fn.flickrGallery = function(settings) {
 		//Defaults settings  
@@ -71,6 +72,9 @@
         Setup: function(gDiv, settings) {
             //Select the gallery div 
             prty.galleryDiv = gDiv.append('<ul class="entries-columns"></ul>').find('ul');
+            prty.galleryLoader = prty.galleryDiv.find('.galleryLoader');
+            //Show the loader
+            prty.galleryLoader.fadeIn(settings.Speed/2);
             $.get(base_url + '/api/flickr', function(results) {
                 //Get the image datas and declare basic variables
                 var photoSet = results.photoset;
@@ -86,6 +90,8 @@
                     //Initialize ViewBox
                     prty.setupViewBox($(this), settings);
                 });
+                //Hide the preloader
+                prty.galleryLoader.fadeOut(settings.Speed/2);
             }).fail(function() {
                 console.log("Error");
             });
