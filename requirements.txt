@@ -1,0 +1,2 @@
+rjsmin==1.0.12
+rcssmin==1.0.6

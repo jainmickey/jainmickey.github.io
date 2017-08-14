@@ -72,7 +72,11 @@
         Setup: function(gDiv, settings) {
             //Select the gallery div 
             prty.galleryDiv = gDiv.append('<ul class="entries-columns"></ul>').find('ul');
-            prty.galleryLoader = prty.galleryDiv.find('.galleryLoader');
+            prty.galleryLoader = $('.content').find('.galleryLoader');
+            $(window).load(function () {
+                //Hide the preloader after all images loaded
+                prty.galleryLoader.fadeOut(settings.Speed/2);
+            });
             //Show the loader
             prty.galleryLoader.fadeIn(settings.Speed/2);
             $.get(base_url + '/api/flickr', function(results) {
@@ -90,10 +94,8 @@
                     //Initialize ViewBox
                     prty.setupViewBox($(this), settings);
                 });
-                //Hide the preloader
-                prty.galleryLoader.fadeOut(settings.Speed/2);
-            }).fail(function() {
-                console.log("Error");
+            }).fail(function(e) {
+                console.log("Error", e);
             });
         },
         //Build HTML structure of the thumb
