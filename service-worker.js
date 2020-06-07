@@ -275,5 +275,5 @@ self.addEventListener('fetch', function(event) {
 
 // Runtime cache configuration, using the sw-toolbox library.
 
-toolbox.router.get(/^https:\/\/jainmickey-web\.herokuappp\.com\/api\/flickr/, toolbox.networkFirst, {"cache":{"name":"flickrPhotosData-v3"}});
+toolbox.router.get(/^https:\/\/jainmickey-web\.herokuappp\.com\/api\/flickr, toolbox.networkFirst, {"cache":{"name":"flickrPhotosData-v3"}});
 
