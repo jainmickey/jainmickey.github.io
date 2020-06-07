@@ -122,6 +122,7 @@
       if (imagesList) {
         app.flickrPhotos = imagesList;
         app.updatePhotos(app.flickrPhotos)
+        app.getPhotos();
       } else {
         app.getPhotos();
         app.saveFlickrPhotos();
