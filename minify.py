@@ -38,26 +38,11 @@ def doJSMin(source_paths, header, dest_path, min_path):
 def doCSSMin(source_paths, dest_path, min_path):
     return do_process_files(minify_css_proc, source_paths, '', dest_path, min_path)
 
-js_dest_path = "static/js/combine.js"
-js_min_path = "static/js/combine.min.js"
-js_header_path = "jslicenses.js"
-
-js_sources = [
-    "static/js/FlickrAPI.js",
-    "static/js/Flickr.Gallery.js",
-    "static/js/custom.js"
-]
-
-css_dest_path = "static/css/combine.css"
-css_min_path = "static/css/combine.min.css"
-
-css_sources = [
-    "static/css/gallery.css",
-    "static/css/custom_gallery.css",
-]
-
 
 if __name__ == '__main__':
     jsHeader = ''
-    doJSMin(js_sources, jsHeader, js_dest_path, js_min_path)
-    doCSSMin(css_sources, css_dest_path, css_min_path)
+    doJSMin(["scripts/app.js"], jsHeader, "scripts/app.js", "scripts/app.min.js")
+    doCSSMin(["styles/photos.css"], "styles/photos.css", "styles/photos.min.css")
+    doCSSMin(["styles/portfolio.css"], "styles/portfolio.css", "styles/portfolio.min.css")
+    # doJSMin(js_sources, jsHeader, js_dest_path, js_min_path)
+    # doCSSMin(css_sources, css_dest_path, css_min_path)
